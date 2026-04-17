@@ -1,0 +1,21 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f8ff"/>
+  <!-- Bird body -->
+  <ellipse cx="200" cy="180" rx="40" ry="25" fill="#32cd32"/>
+  <!-- Bird head -->
+  <circle cx="200" cy="140" r="25" fill="#32cd32"/>
+  <!-- Beak -->
+  <polygon points="200,140 210,135 210,145" fill="#ffd700"/>
+  <!-- Eyes -->
+  <circle cx="190" cy="130" r="3" fill="#000"/>
+  <circle cx="210" cy="130" r="3" fill="#000"/>
+  <!-- Wings -->
+  <ellipse cx="160" cy="170" rx="20" ry="15" fill="#228b22"/>
+  <ellipse cx="240" cy="170" rx="20" ry="15" fill="#228b22"/>
+  <!-- Tail -->
+  <polygon points="240,180 260,170 260,190" fill="#228b22"/>
+  <!-- Feet -->
+  <line x1="190" y1="205" x2="190" y2="220" stroke="#ffd700" stroke-width="2"/>
+  <line x1="210" y1="205" x2="210" y2="220" stroke="#ffd700" stroke-width="2"/>
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#228b22">Parakeet</text>
+</svg>

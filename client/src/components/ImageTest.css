@@ -1,0 +1,64 @@
+/* ImageTest.css */
+
+.image-test-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.image-test-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.image-test-container p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.image-test-item {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.image-test-item h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.test-pet-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.image-test-item p {
+  color: #666;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .image-test-container {
+    padding: 1rem;
+  }
+}

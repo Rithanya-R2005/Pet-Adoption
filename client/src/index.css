@@ -1,0 +1,8 @@
+/* Global reset moved to App.css; keep minimal sensible defaults here */
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}

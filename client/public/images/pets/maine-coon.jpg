@@ -1,0 +1,29 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f8ff"/>
+  <!-- Cat body -->
+  <ellipse cx="200" cy="180" rx="75" ry="40" fill="#d2b48c"/>
+  <!-- Cat head -->
+  <circle cx="200" cy="130" r="50" fill="#d2b48c"/>
+  <!-- Ears -->
+  <polygon points="165,85 175,60 185,85" fill="#a0522d"/>
+  <polygon points="235,85 225,60 215,85" fill="#a0522d"/>
+  <!-- Eyes -->
+  <ellipse cx="185" cy="115" rx="7" ry="9" fill="#000"/>
+  <ellipse cx="215" cy="115" rx="7" ry="9" fill="#000"/>
+  <!-- Nose -->
+  <polygon points="200,125 195,130 205,130" fill="#ff69b4"/>
+  <!-- Mouth -->
+  <path d="M 195 135 Q 200 140 205 135" stroke="#000" stroke-width="1" fill="none"/>
+  <!-- Whiskers -->
+  <line x1="180" y1="130" x2="155" y2="125" stroke="#000" stroke-width="1"/>
+  <line x1="180" y1="135" x2="155" y2="135" stroke="#000" stroke-width="1"/>
+  <line x1="180" y1="140" x2="155" y2="145" stroke="#000" stroke-width="1"/>
+  <line x1="220" y1="130" x2="245" y2="125" stroke="#000" stroke-width="1"/>
+  <line x1="220" y1="135" x2="245" y2="135" stroke="#000" stroke-width="1"/>
+  <line x1="220" y1="140" x2="245" y2="145" stroke="#000" stroke-width="1"/>
+  <!-- Tail -->
+  <path d="M 275 180 Q 310 160 325 190" stroke="#d2b48c" stroke-width="8" fill="none"/>
+  <!-- Fluffy fur -->
+  <ellipse cx="200" cy="140" rx="20" ry="15" fill="#ffffff" opacity="0.2"/>
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#8b4513">Maine Coon</text>
+</svg>
