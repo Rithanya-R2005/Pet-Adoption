@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/Rithanya-R2005/Pet-Adoption.git'
+                git branch: 'main', url: 'https://github.com/Rithanya-R2005/Pet-Adoption.git'
             }
         }
 
