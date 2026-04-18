@@ -170,7 +170,6 @@ mongoose.connection.once('open', () => {
 });
 
 // Root route
-//Root route
 app.get('/', (req, res) => {
   res.json({
     message: 'Welcome to PetAdopt API',
