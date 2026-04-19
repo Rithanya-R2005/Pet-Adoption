@@ -4,7 +4,6 @@ pipeline {
     environment {
         IMAGE_NAME = "pet-adoption-app"
         CONTAINER_NAME = "pet-adoption-container"
-        PORT = "5000"
     }
 
     stages {
@@ -17,46 +16,35 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh '''
-                docker build -t $IMAGE_NAME .
-                '''
+                sh 'docker build -t $IMAGE_NAME .'
             }
         }
 
         stage('Stop & Remove Old Container') {
             steps {
-                sh '''
-                docker rm -f $CONTAINER_NAME || true
-                '''
+                sh 'docker rm -f $CONTAINER_NAME || true'
             }
         }
 
         stage('Run Container Test') {
             steps {
-                sh '''
-                docker run -d -p $PORT:$PORT --name $CONTAINER_NAME $IMAGE_NAME
-                '''
+                sh 'docker run -d -P --name $CONTAINER_NAME $IMAGE_NAME'
             }
         }
 
         stage('Verify Container Running') {
             steps {
-                sh '''
-                docker ps | grep $CONTAINER_NAME
-                '''
+                sh 'docker ps | grep $CONTAINER_NAME'
             }
         }
     }
 
     post {
         success {
-            echo '✅ BUILD SUCCESS: Docker container is running successfully'
+            echo '✅ BUILD SUCCESS: Container running'
         }
         failure {
-            echo '❌ BUILD FAILED: Check console output for errors'
-        }
-        always {
-            echo '🔁 Pipeline execution completed'
+            echo '❌ BUILD FAILED'
         }
     }
 }
