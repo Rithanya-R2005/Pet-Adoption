@@ -2,20 +2,16 @@ pipeline {
     agent any
 
     environment {
-        BRANCH_NAME = "main"
         IMAGE_NAME = "pet-adoption-app"
         CONTAINER_NAME = "pet-adoption-container"
     }
 
     stages {
 
-        stage('Checkout Code (main branch)') {
+        stage('Checkout Code') {
             steps {
-                // Clean workspace to avoid git errors
                 deleteDir()
-
-                // Explicitly checkout MAIN branch
-                git branch: 'main', url: 'https://github.com/Rithanya-R2005/Pet-Adoption.git'
+                checkout scm
             }
         }
 
