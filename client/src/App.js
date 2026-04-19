@@ -77,7 +77,7 @@ const PublicRoute = ({ children, restricted = false }) => {
 };
 
 // Layout Component
-// Layout Components of the projectss
+// Layout Components of the projectssss
 const Layout = ({ children }) => (
   <>
     <Navigation />
