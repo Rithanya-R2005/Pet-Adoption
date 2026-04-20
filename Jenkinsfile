@@ -10,6 +10,13 @@ pipeline {
 
     stages {
 
+        stage('Clean Workspace') {
+            steps {
+                echo "Cleaning workspace..."
+                deleteDir()
+            }
+        }
+
         stage('Checkout Code') {
             steps {
                 checkout scm
